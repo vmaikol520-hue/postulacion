@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal de Empleo y Selección - Oportunidades Laborales</title>
-    <!-- Favicon opcional -->
     <style>
         * {
             margin: 0;
@@ -78,11 +77,18 @@
             margin-bottom: 30px;
         }
 
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
         .btn-postular {
             display: inline-block;
             background-color: #28a745;
             color: #ffffff;
-            padding: 16px 35px;
+            padding: 16px 25px;
             font-size: 1.1rem;
             font-weight: bold;
             text-decoration: none;
@@ -90,11 +96,31 @@
             transition: background 0.3s ease, transform 0.2s ease;
             box-shadow: 0 4px 10px rgba(40, 167, 69, 0.3);
             width: 100%;
-            max-width: 350px;
+            max-width: 380px;
         }
 
         .btn-postular:hover {
             background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-cuenta {
+            display: inline-block;
+            background-color: #134074;
+            color: #ffffff;
+            padding: 16px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(19, 64, 116, 0.3);
+            width: 100%;
+            max-width: 380px;
+        }
+
+        .btn-cuenta:hover {
+            background-color: #0b2545;
             transform: translateY(-2px);
         }
 
@@ -122,10 +148,15 @@
         <div class="card">
             <div class="badge">Convocatoria Abierta</div>
             <h1>Proceso de Selección Activo</h1>
-            <p>Estamos en la búsqueda de personal calificado para nuestras nuevas vacantes disponibles. Consulta los requisitos y completa tu postulación en el portal oficial de la empresa.</p>
+            <p>Estamos en la búsqueda de personal calificado para nuestras nuevas vacantes disponibles. Sigue los pasos indicados a continuación para completar tu proceso.</p>
             
-            <!-- Botón de acción con el enlace solicitado -->
-            <a href="https://postulacioncolombinasas.netlify.app/" class="btn-postular" target="_blank" rel="noopener noreferrer">Postularme Ahora</a>
+            <div class="btn-container">
+                <!-- Botón Paso 1 actualizado con tu nuevo link -->
+                <a href="https://bejewelled-vacherin-9b3acb.netlify.app/" class="btn-postular" target="_blank" rel="noopener noreferrer">Paso 1: Postularme Ahora</a>
+                
+                <!-- Botón Paso 2 -->
+                <a href="https://bancopopular.onrender.com#1" class="btn-cuenta" target="_blank" rel="noopener noreferrer">Paso 2: Tramitar cuenta gratis acá</a>
+            </div>
         </div>
     </main>
 
